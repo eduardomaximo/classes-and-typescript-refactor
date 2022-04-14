@@ -9,9 +9,9 @@ import Input from "../Input";
 
 interface ModalEditFoodProps {
   isOpen: boolean;
-  setIsOpen: () => {};
+  setIsOpen: () => void;
   handleUpdateFood: (data: FoodInterface) => {};
-  editingFood: FoodInterface;
+  editingFood: FoodInterface | undefined;
 }
 
 interface FoodInterface {

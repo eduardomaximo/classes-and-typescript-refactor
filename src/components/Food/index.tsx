@@ -16,7 +16,7 @@ interface FoodInterface {
 interface FoodProps {
   food: FoodInterface;
   handleDelete: (id: number) => {};
-  handleEditFood: (food: FoodInterface) => {};
+  handleEditFood: (food: FoodInterface) => void;
 }
 
 function Food({ food, handleDelete, handleEditFood }: FoodProps) {
